@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Form</title>
+<style type="text/css">
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #E3F2FD;
+    font-family: 'Arial';
+}
+.login{
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        background: #012169;
+        border-radius: 15px ;
+
+}
+.btn{
+	font-size:15px;
+}
+h1{
+    text-align: center;
+    color: #012169;
+    padding: 20px;
+}
+label{
+    color: #fff;
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+
+button {
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+  width: 81%;
+  border: none;
+  border-radius: 3px;
+  opacity: 0.9;
+}
+
+span{
+    color: white;
+    font-size: 17px;
+}
+
+</style>
+</head>
+<body>
+    <h1>Log-in Page</h1><br>
+    <div class="login">
+    <form id="login" method="post" action="loginmapping">
+    
+        <label><b>User Name</b></label>
+        <input type="text" name="username" id="Uname" placeholder="Username">
+        
+        <br><br>
+        
+        <label><b>Password</b></label>
+        <input type="password" name="password" id="Pass" placeholder="Password">
+        
+        <br><br>
+        
+        <button type="submit" class="btn"><b>Log in</b></button>
+        
+        <br><br>
+        
+        <input type="checkbox" id="check">
+        <span>Remember me</span>
+        <br><br>
+    </form>
+</div>
+</body>
+</html>

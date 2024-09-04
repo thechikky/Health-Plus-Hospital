@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+    <title>Health+ Hospital</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #E3F2FD;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #012169;
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+        }
+
+        h1 {
+        	font-size: 50px;
+        	margin: 0;
+        	text-align: center;
+        }
+        
+        h4 {
+        	text-align: center;
+            margin: 0;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #318CE7;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-align: center;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+
+        .container {
+            max-width: 990px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .jumbotron {
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .jumbotron h2 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .jumbotron p {
+            font-size: 18px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            }
+            
+         .square-button {
+  			width: 150px;
+  			height: 150px;
+  			border: solid;
+			border-color: #012169;
+			border-radius: 20px;
+  			padding: 10px;
+  			background-color: #6CB4EE;
+  			color: #fff;
+  			text-align: center;
+  			font-size: 18px;
+}
+
+		.square-button:hover {
+  			background-color: #E3F2FD;
+  			cursor: pointer;
+}
+        .flex-parent {
+  			display: flex;
+  			justify-content: center;
+} 
+        button.margin {
+  			margin-right: 50px;
+  			margin-left: 50px;
+} 
+        .span {
+        	height: 1000px;
+  			width: 1000px;
+}
+        .btn {
+        	margin: 660px;
+  			font-size: 15px;
+}
+	    .dropdown {
+    		position: relative;
+    		display: inline-block;
+    		font-size: 30px;
+}
+    	.dropdown-content {
+    		display: none;
+    		position: absolute;
+    		background-color: #E3F2FD;
+    		min-width: 190px;
+    		box-shadow: 0px 0px 0px 0px rgba(0.2,0.2,0.2,0.2);
+    		border: solid;
+			border-color: #fff;
+    		border-radius: 10px;
+    		padding: 2px;
+    		z-index: 1;
+    		font-size:15px;
+}
+  
+  		.dropdown:hover .dropdown-content {
+    		display: block;
+}
+
+        .center-image {
+    		display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+}
+
+		.logo {
+			float: right;
+			margin-top: 0px;
+    		}
+             
+    </style>
+</head>
+<body>
+    <header>
+    	<div class="dropdown">
+  		<span>&#8942;</span>
+  		<div class="dropdown-content">
+  		<ul>
+    	<li><a href="info.html">Hospital Information</a></li>
+    	<li><a href="register1.html">Book an Appointment</a></li>
+    	<li><a href="doctor.html">About Doctors</a></li>
+    	<li><a href="https://www.google.com/maps/place/Indore,+Madhya+Pradesh/@22.7147491,75.8518098,16.33z/data=!4m6!3m5!1s0x3962fcad1b410ddb:0x96ec4da356240f4!8m2!3d22.7195687!4d75.8577258!16zL20vMDFfeXZ5?entry=ttu">Location</a></li>  		
+  		</ul>
+  		</div>
+		</div>
+		<img src="img/l.jpg" class="logo" width="100" height="100">
+		<div>
+        <h1><b>Health+ Hospital</b></h1><br>
+        <h4>"we care"</h4>
+        </div>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h2>Welcome to Health+ Hospital</h2>
+            <p>At Health+, we are dedicated to providing exceptional healthcare services to our community. With a strong commitment to patient care, innovation, and medical excellence, we strive to be the leading medical institution in Indore, Madhya Pradesh.<br><br>
+            Our team of highly skilled and compassionate healthcare professionals works tirelessly to ensure that each patient receives personalized, comprehensive care. From routine check-ups to complex procedures, we are here to address all your medical needs.</p>
+            <img src="img/plus.jpg" class="center-image" width="900" height="500">
+        </div>
+        <h3>Our Services</h3>
+         <ul>
+            <li>Appointment Scheduling</li>
+            <li>Patient Records Management</li>
+            <li>Medical Billing</li>
+            <li>And more...</li>
+        </ul>
+        <br>
+        <div class="flex-parent">
+		<form action="info.html"><button class="square-button margin">Hospital Information</button></form>
+		<form action="register1.html"><button class="square-button margin">Book an Appointment</button></form>
+		<form action="doctor.html"><button class="square-button margin">About Doctors</button></form>
+		<form action="https://www.google.com/maps/place/Indore,+Madhya+Pradesh/@22.7147491,75.8518098,16.33z/data=!4m6!3m5!1s0x3962fcad1b410ddb:0x96ec4da356240f4!8m2!3d22.7195687!4d75.8577258!16zL20vMDFfeXZ5?entry=ttu"><button class="square-button margin">Location</button></form>
+		</div>
+		<br>
+		<img src="img/h1.jpg" class="center-image" width="900" height="500">
+		 <h3>Experience Excellence in Healthcare at Health+</h3>
+          <p>Thank you for visiting our website. We invite you to explore our services, learn more about our dedicated team, and discover how Health+ can meet your healthcare needs. Your well-being is our priority, and we are here to support you every step of the way.</p>
+		<img src="img/h2.jpg" class="center-image" width="900" height="500">
+	</div>	
+    <footer>
+        &copy; 2023 Health Plus Hospital. Thankyou for visiting.
+    </footer>
+		<br>
+		<a href="login1.html" class="btn" >AdminLogin</a>
+</body>
+</html>

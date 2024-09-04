@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Patient Registration</title>
+<style>
+body {font-family: Arial;
+		color:  #fff;
+		background-color: #E3F2FD}
+* {box-sizing: content-box}
+
+input[type=text], input[type=number], input[type=email], input[type=date], textarea {
+  width: 95%;
+  padding: 10px;
+  margin: 2px 2px 2px 2px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=number]:focus, input[type=text]:focus,input[type=email]:focus, input[type=date]:focus, textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 2px solid #012169;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+}
+
+.patient {
+        width: 600px;
+        overflow: hidden;
+        margin: auto;
+        padding: 20px;
+        background: #012169;
+        border-radius: 15px ;
+
+}
+
+button:hover {
+  opacity:1;
+}
+
+.signupbtn {
+  float: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1{
+    text-align: center;
+    color:  #012169;
+    padding: 20px;
+}
+
+.signupbtn {
+     width: 50%;
+}
+
+a {
+	color: #318CE7;
+    text-decoration: none;
+}
+        
+a:hover {
+    color: #fff;
+}
+
+</style>
+</head>
+<body>
+<h1>Register a Patient</h1>
+<h3><a href="index.html">Dashboard</a></h3>
+<form id="patient" action="patientmapping" method="post" >
+  <div class="patient">
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    
+    <label for="gender"><b>Gender</b></label>
+    <br>
+    <label for="radio1">Male</label>
+    <input type="radio" id="radio1" name="radio" value="male">
+    <label for="radio2">Female</label>
+    <input type="radio" id="radio2" name="radio" value="female">
+  	<br>
+    <br>
+    
+    <label for="name"><b>Patient Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    
+    <label for="contact"><b>Contact</b></label>
+    <input type="number" placeholder="Enter Contact" name="contact" required>
+
+    <label for="city"><b>Address</b></label>
+    <input type="text" placeholder="Enter City" name="city" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+
+    <label for="dob"><b>Date of Birth</b></label>
+    <input type="date" name="dob" required>
+
+    <label for="drname"><b>Doctor's Name</b></label>
+    <input type="text" name="drname" required>
+
+    <label for="treatment"><b>Treatment</b></label>
+    <textarea id="treatment" name="treatment" rows="5" cols="50" required></textarea>
+    <br>
+    
+    <p>Attach Identification Documents with the form</p>
+    
+   <div class="clearfix">
+      <button type="submit" class="signupbtn">Add</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Appointment Booking</title>
+<style>
+body {font-family: Arial;
+		color: #fff;
+		background-color: #E3F2FD}
+* {box-sizing: content-box}
+
+input[type=text], input[type=number], input[type=email], input[type=date], input[type=time] {
+  width: 95%;
+  padding: 10px;
+  margin: 2px 2px 2px 2px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=number]:focus, input[type=text]:focus,input[type=email]:focus, input[type=date]:focus, input[type=time]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 2px solid #012169;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px 0px;
+  border: none;
+  cursor: pointer;
+  width: 95%;
+  opacity: 0.9;
+}
+
+.book{
+        width: 600px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 20px;
+        background: #012169;
+        border-radius: 15px ;
+
+}
+
+button:hover {
+  opacity:1;
+}
+
+.bookbtn {
+  float: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1{
+    text-align: center;
+    color:  #012169;
+    padding: 20px;
+}
+
+.bookbtn {
+     width: 92%;
+  }
+
+a {
+	color: #318CE7;
+    text-decoration: none;
+        }
+        
+a:hover {
+    color: #fff;
+        }
+  
+</style>
+</head>
+<body>
+<h1>Book an Appointment</h1>
+<h3><a href="home.html">Home Page</a></h3>
+<form id="book" action="bookmapping" method="post" >
+  <div class="book">
+    <p>Please fill out the form below to make an appointment.</p>
+    <hr>
+    
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    
+    <label for="contact"><b>Contact</b></label>
+    <input type="number" placeholder="Enter Contact" name="contact" required>
+
+    <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="address" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+
+    <label for="date"><b>Preferred Date</b></label>
+    <input type="date" placeholder="Enter Date" name="date" required>
+
+    <label for="time"><b>Preferred Time</b></label>
+    <input type="time" placeholder="Enter Time" name="time" required>
+    
+    <label for="doc"><b>Doctor's Name</b></label>
+    <input type="text" placeholder="Enter Doctor's Name" name="doc" required>
+    <br>
+    <p>By clicking Send you agree to our Privacy Policy terms and conditions.</p>
+
+     <div class="clearfix">
+      <button type="submit" class="bookbtn">Leave a Request</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>
