@@ -18,4 +18,4 @@ Technologies Used
 - **Backend**: Java, J2EE Application Development, Java Dtabase Connectivity (JDBC) 
 - **Frontend**: HTML/CSS
 - **Database**: MySQL
-- **IDE**: Ecllips
+- **IDE**: Eclipse
