@@ -7,7 +7,7 @@ This project aims to enhance hospital efficiency by providing an easy-to-use int
 
 Features
 - **Patient Management**: Register new patients, view patient history, and manage appointments.
-- **Appointment Scheduling:**: 
+- **Appointment Scheduling**: 
 - **Doctor and Staff Management**: Maintain details of doctors, nurses, and other hospital staff.
 - **Billing and Payments**: Automated billing system with options for online payments.
 - **Prescription and Medication Management**: Doctors can create prescriptions which patients can view or print.
